@@ -48,9 +48,9 @@ features <- as.vector(features$feature)
                 select((matches(('*mean*|*std*|subject|activity'))))
 ##Replace numbers coded activity by descriptive names
         ## Recode activity
-        fulldataset$activity <- as.factor(fulldataset$activity)
-        fulldataset$activity <- 
-                recode_factor(fulldataset$activity,
+        selectdataset$activity <- as.factor(fulldataset$activity)
+        selectdataset$activity <- 
+                recode_factor(selectdataset$activity,
                               '1'= "WALKING", '2' = "WALKING_UPSTAIRS" , 
                               '3' = "WALKING_DOWNSTAIRS" , '4' = "SITTING",
                               '5' = "STANDING" , '6' = "LAYING")
