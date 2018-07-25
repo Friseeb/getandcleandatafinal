@@ -1,0 +1,54 @@
+---
+title: "CodeBook"
+author: "friseb"
+date: "7/25/2018"
+output: html_document
+Codebook For Tidy Data
+
+subject 
+        Subject ID number. 
+        Integer, from 1 to 30.
+activity
+        Type of activity performed by subject. 6 codes.
+        WALKING
+        WALKING_UPSTAIRS
+        WALKING_DOWNSTAIRS
+        SITTING
+        STANDING
+        LAYING
+
+Then, only mean and standard deviation parameters 
+were selected from cell phone movement data for each dimension (XYZ):
+Time Body Acceleration -XYZ
+Time Gravity Acceleration -XYZ
+Time Body Acceleration Jerk -XYZ
+Time Body Gyroscope-XYZ
+Time Body Gyroscope Jerk -XYZ
+Time Body Acceleration Magnetic
+Time Gravity Acceleration Magnetic
+Time Body Acceleration Jerk Magnetic
+Time Body Gyroscope Magnetic
+Time Body Gyroscope Jerk Magnetic
+Fourier Body Acceleration -XYZ
+Fourier Body Acceleration Jerk -XYZ
+Fourier Body Gyroscope-XYZ
+Fourier Body Acceleration Magnetic
+Fourier Body Acceleration  Jerk Magnetic
+Fourier Body Gyroscope Magnetic
+Fourier Body Gyroscope Jerk Magnetic
+Gravity Mean
+Time Body Acceleration Mean
+Time Body Acceleration Jerk Mean
+Time Body Gyroscope Mean
+Time Body Gyroscope Jerk Mean
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
